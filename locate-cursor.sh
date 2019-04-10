@@ -56,7 +56,7 @@ do
       ((i++))
     done
 
-    if [ $PASS -gt 2 ]; then
+    if [ $PASS -gt 3 ]; then
       gsettings set org.gnome.desktop.interface cursor-size 115
       sleep 1
       gsettings set org.gnome.desktop.interface cursor-size $ORIGINAL
