@@ -6,5 +6,13 @@ A Script to allow locating the cursor on screen using the touchpad or mouse
 * GNOME
 * xdotool
 
-## Installation
-* Make `locate-cursor.sh` executable and move it to `/usr/local/bin/`
+## Installation (Start at Boot)
+Make the script executable:
+`chmod a+x locate-cursor.sh`
+
+Run the following commands (with root privileges): 
+```
+cp locate-cursor.sh /usr/local/bin/locate-cursor
+cp locate-cursor.service /usr/lib/systemd/system/
+systemctl enable locate-cursor.service
+```
