@@ -1,0 +1,9 @@
+[Unit]
+Description=A service to enulate Mac OS X cursor locating
+After=display-manager.service
+
+[Service]
+ExecStart=/usr/local/bin/locate-cursor
+
+[Install]
+WantedBy=multi-user.target
