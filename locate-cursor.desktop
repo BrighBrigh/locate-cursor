@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Exec=/usr/local/bin/locate-cursor
+Hidden=false
+X-GNOME-Autostart-enabled=true
+Name=Locate-Cursor
+Comment=Script to allow Mac OS X like cursor detection
