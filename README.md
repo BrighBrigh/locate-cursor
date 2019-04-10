@@ -15,5 +15,8 @@ A Script to allow locating the cursor on screen using the touchpad or mouse, emu
 * Copy locate-cursor.desktop to `~/.config/autostart/locate-cursor.desktop`
 * Check that its enabled in Tweaks->Startup Applications
 
+## Troubleshooting
+If you are having issues getting the script to run, double check the permissions of `/usr/local/bin/locate-cursor`. You may have to adjust these permissions in order for it to work.
+
 ## Next Step
 Finding a way to reduce the memory footprint of the program. While it's small enough to be used on a decent system without any issues, it still uses more memory than I'm happy with.
