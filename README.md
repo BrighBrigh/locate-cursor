@@ -7,15 +7,9 @@ A Script to allow locating the cursor on screen using the touchpad or mouse, emu
 * xdotool
 
 ## Installation (Start at Boot)
-Make the script executable:
+* Make the script executable:
 `chmod a+x locate-cursor.sh`
-
-Run the following commands (with root privileges): 
-```
-cp locate-cursor.sh /usr/local/bin/locate-cursor
-cp locate-cursor.service /usr/lib/systemd/system/
-systemctl enable locate-cursor.service
-```
+*  Set it to autostart, using whichever method you prefer.
 
 ## Next Step
 Finding a way to reduce the memory footprint of the program. While it's small enough to be used on a decent system without any issues, it still uses more memory than I'm happy with.
