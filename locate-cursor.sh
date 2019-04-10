@@ -41,7 +41,7 @@ do
     i=0
     PASS=0
     SLEEPMODE=0
-    while [ $i -lt 5 ]
+    while [ $i -lt 4 ]
     do
       calculateDistance DISTANCE
       if [ $DISTANCE -eq 0 ]; then
@@ -56,7 +56,7 @@ do
       ((i++))
     done
 
-    if [ $PASS -gt 3 ]; then
+    if [ $PASS -gt 2 ]; then
       gsettings set org.gnome.desktop.interface cursor-size 115
       sleep 1
       gsettings set org.gnome.desktop.interface cursor-size $ORIGINAL
