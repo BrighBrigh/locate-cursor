@@ -1,7 +1,14 @@
 #!/bin/bash
 
-RUN=1
+RUN=0
 ORIGINAL=$(gsettings get org.gnome.desktop.interface cursor-size)
+
+control_c(){
+  ((RUN++))
+}
+
+trap control_c SIGINT
+
 
 function getX(){
     local  __resultvar=$1
@@ -36,7 +43,7 @@ function sleepMode(){
   done
 }
 
-while [ $RUN -gt 0 ]
+while [ $RUN -lt 1 ]
 do
     i=0
     PASS=0
