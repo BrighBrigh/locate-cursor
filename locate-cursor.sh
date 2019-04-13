@@ -5,6 +5,7 @@ ORIGINAL=$(gsettings get org.gnome.desktop.interface cursor-size)
 
 control_c(){
   ((RUN++))
+  exit
 }
 
 trap control_c SIGINT
@@ -57,7 +58,7 @@ do
       if [ $SLEEPMODE -eq 4 ]; then
         sleepMode
       fi
-      if [ $DISTANCE -gt 100 ]; then
+      if [ $DISTANCE -gt 150 ]; then
         ((PASS++))
       fi
       ((i++))
